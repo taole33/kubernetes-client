@@ -19,7 +19,7 @@ name: Generate Model
 on:
   push:
     branches:
-      - main
+      - test-ci
   pull_request:
     paths-ignore:
       - 'doc/**'
@@ -37,7 +37,7 @@ permissions:
 jobs:
   generate-model:
     name: Kubernetes Model Generator Build
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
