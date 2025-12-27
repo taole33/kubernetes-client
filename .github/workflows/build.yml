@@ -23,7 +23,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - test-ci
   pull_request:
     paths-ignore:
       - 'doc/**'
